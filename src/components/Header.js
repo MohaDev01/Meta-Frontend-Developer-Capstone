@@ -1,9 +1,14 @@
-import Logo from '../assets/icons_assets/Logo.svg';
-
+import Nav from './Nav';
 function Header () {
   return (
-    <header>
-      <img src={Logo} />
+    <header className="header">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Nav />
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
