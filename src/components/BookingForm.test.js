@@ -1,19 +1,29 @@
-import { render, screen } from "@testing-library/react";
+// BookingForm.test.js
+import React from 'react';
+import { render } from '@testing-library/react';
 import BookingForm from './BookingForm';
 
-test('Renders the BookingForm labels', () => {
-  render(<BookingForm availableTimes={[]} dispatch={() => {}} />);
-  
-  // Test if the form labels are rendered correctly
-  const dateLabel = screen.getByText("Choose date");
-  expect(dateLabel).toBeInTheDocument();
+describe('BookingForm', () => {
+  test('should have required attributes on input fields', () => {
+    const { getByLabelText } = render(<BookingForm submitForm={() => {}} />);
 
-  const timeLabel = screen.getByText("Choose time");
-  expect(timeLabel).toBeInTheDocument();
+    // Name field
+    const nameInput = getByLabelText(/Name:/i);
+    expect(nameInput).toHaveAttribute('required');
+    expect(nameInput).toHaveAttribute('minLength', '3');
 
-  const guestsLabel = screen.getByText("Number of guests");
-  expect(guestsLabel).toBeInTheDocument();
+    // Number of People field
+    const numberOfPeopleInput = getByLabelText(/Number of People:/i);
+    expect(numberOfPeopleInput).toHaveAttribute('required');
+    expect(numberOfPeopleInput).toHaveAttribute('min', '1');
+    expect(numberOfPeopleInput).toHaveAttribute('max', '10');
 
-  const occasionLabel = screen.getByText("Occasion");
-  expect(occasionLabel).toBeInTheDocument();
+    // Date field
+    const dateInput = getByLabelText(/Date:/i);
+    expect(dateInput).toHaveAttribute('required');
+
+    // Time field
+    const timeInput = getByLabelText(/Time:/i);
+    expect(timeInput).toHaveAttribute('required');
+  });
 });
