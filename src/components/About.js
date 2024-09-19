@@ -1,6 +1,6 @@
 import './About.css';
-import ImgA from '../assets/icons_assets/Mario and Adrian A.jpg';
-import ImgB from '../assets/icons_assets/Mario and Adrian B.jpg'
+import ImgA from '../assets/icons_assets/Mario_and_Adrian_A.jpg';
+import ImgB from '../assets/icons_assets/Mario_and_Adrian_B.jpg'
 function About () {
   return (
     <>

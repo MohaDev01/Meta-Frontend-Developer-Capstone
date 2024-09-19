@@ -1,9 +1,9 @@
 import './Highlights.css';
-import GreekSaladImg from '../assets/icons_assets/greek salad.jpg';
+import GreekSaladImg from '../assets/icons_assets/greekSalad.jpg';
 import BruchettaImg from '../assets/icons_assets/bruchetta.jpg';
-import LemonDessertImg from '../assets/icons_assets/lemon dessert.jpg';
+import LemonDessertImg from '../assets/icons_assets/lemonDessert.jpg';
 import DeliveryImg from '../assets/icons_assets/Group.svg';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 export default function Highlights () {
   const navigate = useNavigate();
   const handleButtonClick = () => {
