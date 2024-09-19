@@ -1,8 +1,13 @@
+import Main from './Main';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import ConfirmedBooking from './ConfirmedBooking';
 function Reservations () {
   return (
-    <>
-      <h1>Reservations</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="confirmed-booking" element={<ConfirmedBooking />} />
+    </Routes>
   );
 }
 

@@ -1,7 +1,14 @@
+import Hero from './Hero';
+import Highlights from './Highlights';
+import Testimonials from './Testimonials';
+import About from './About';
 function Home () {
   return (
     <>
-      <h1>Home</h1>
+      <Hero />
+      <Highlights />
+      <Testimonials />
+      <About />
     </>
   );
 }

@@ -1,3 +1,6 @@
+.navbar {
+  border-bottom: .5rem solid #495E57;
+}
 nav ul {
   list-style: none;
   display: flex;

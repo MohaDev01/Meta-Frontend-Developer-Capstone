@@ -25,7 +25,7 @@ function Main() {
   // Function to submit form data
   const submitForm = (formData) => {
     if (submitAPI(formData)) {
-      navigate('/booking-confirmation'); // Navigate to confirmation page if successful
+      navigate('confirmed-booking'); // Update to full path for confirmation
     }
   };
 

@@ -1,8 +1,7 @@
+import Message from "./Message";
 function Login () {
   return (
-    <>
-      <h1>Login</h1>
-    </>
+    <Message />
   );
 }
 

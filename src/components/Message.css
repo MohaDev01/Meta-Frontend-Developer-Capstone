@@ -1,0 +1,25 @@
+#message {
+  padding: 4rem;
+}
+#message .row {
+  background-color: #495E57;
+  padding: 4rem;
+  border-radius: 1rem;
+  /* animation: colorEffect 2s infinite alternate cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+}
+#message .col-12 {
+  background-color: #EDEFEE;
+  padding: 4rem;
+  border-radius: 1rem;
+  animation: colorChange 1s infinite alternate cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@keyframes colorChange {
+  0% {
+    box-shadow: inset 100rem 0rem 1rem rgba(244, 195, 20, 1);
+  }
+}
+@keyframes colorEffect {
+  0% {
+    box-shadow: inset 100rem 0rem 1rem rgba(0, 0, 0, .5);
+  }
+}

@@ -1,8 +1,7 @@
+import Message from "./Message";
 function OrderOnline () {
   return (
-    <>
-      <h1>Order Online</h1>
-    </>
+    <Message />
   );
 }
 

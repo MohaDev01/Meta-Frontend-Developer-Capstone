@@ -1,0 +1,11 @@
+#confirmed-booking {
+  padding: 4rem;
+}
+#confirmed-booking .row {
+  padding: 8rem;
+}
+#confirmed-booking .col-12 {
+  background-color: #495E57;
+  padding: 8rem;
+  border-radius: 1rem;
+}

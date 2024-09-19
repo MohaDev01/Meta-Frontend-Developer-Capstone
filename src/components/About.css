@@ -1,0 +1,62 @@
+#about {
+  margin-bottom: 10rem;
+}
+#about .container {
+  width: 869px;
+  height: 468px;
+  flex-shrink: 0;
+}
+#about .group {
+  width: 373px;
+  height: 468px;
+  flex-shrink: 0;
+}
+#about h1 {
+  width: 373px;
+  color: #000;
+  font-family: "Markazi Text";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#about h3 {
+  width: 168px;
+  color: #333;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 4rem;
+}
+#about p {
+  width: 370px;
+  height: 322px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: justify;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#about img:nth-child(1) {
+  width: 336px;
+  height: 271.881px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background-color: #D9D9D9;
+  object-fit: cover;
+  box-shadow: -.4rem .2rem 1rem rgba(0, 0, 0, .5);
+}
+#about img:nth-child(2) {
+  width: 336px;
+  height: 267.94px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  background-color: #D9D9D9;
+  object-fit: cover;
+  box-shadow: -.4rem .2rem 1rem rgba(0, 0, 0, .5);
+}
