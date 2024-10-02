@@ -10,66 +10,54 @@ export default function Highlights () {
     navigate('/menu');
   };
   return (
-    <div className="container" id="highlights">
-      <div className="row">
-        {/* <div className="col-6">
-          <h1>This weeks specials!</h1>
+    <div className="container-fluid" id="highlights">
+      <div className="row px-0 px-md-2 px-lg-5 specials">
+        <div className="col-12 col-md-6 col-lg-6 text-center text-md-left text-lg-center">
+          <h2>This weeks specials!</h2>
         </div>
-        <div className="col-6 text-end">
-          <button className="btn" onClick={handleButtonClick}>
+        <div className="col-12 col-md-6 col-lg-6 pt-3 pt-md-0 pt-lg-0 text-center text-md-right text-lg-center">
+          <button className="btn px-4" onClick={handleButtonClick} aria-label="Online Menu">
             Online Menu
           </button>
-        </div> */}
+        </div>
       </div>
-      <div className="row cards-container">
-        <div className="col-lg-4 col-md-6 col-12">
+      <div className="row px-0 px-md-2 px-lg-5 menu">
+        <div className="col-lg-4 col-md-6 col-12 pb-5 pb-md-5 pb-lg-0 d-flex justify-content-center justify-content-lg-end col">
           <div className="card">
-            <img src={GreekSaladImg} className="img-card-top" />
+            <img src={GreekSaladImg} className="img-card-top" alt="Greek Salad" />
             <div className="card-body">
-              <div className="row">
-                <div className="col-6">
-                  <div className="card-title">Greek Salad</div>
-                </div>
-                <div className="col-6 text-end">
-                  <div className="card-subtitle">$12.99</div>
-                </div>
+              <div className="row px-3 d-flex justify-content-between align-items-center">
+                <div className="card-title align-self-start">Greek Salad</div>
+                <div className="card-subtitle align-self-end">$12.99</div>
               </div>
-              <div className="card-text">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</div>
-              <div className="card-link">Order a delivery <img src={DeliveryImg} /></div>
+              <div className="card-text py-4">The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</div>
+              <div className="card-link">Order a delivery <img src={DeliveryImg} alt="Order a delivery" /></div>
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-6 col-12">
+        <div className="col-lg-4 col-md-6 col-12 pb-5 pb-md-0 pb-lg-0 d-flex justify-content-center col">
           <div className="card">
-            <img src={BruchettaImg} className="img-card-top" />
+            <img src={BruchettaImg} className="img-card-top" alt="Bruchetta" />
             <div className="card-body">
-            <div className="row">
-                <div className="col-6">
-                  <div className="card-title">Bruchetta</div>
-                </div>
-                <div className="col-6 text-end">
-                  <div className="card-subtitle">$5.99</div>
-                </div>
+              <div className="row px-3 d-flex justify-content-between align-items-center">
+                <div className="card-title align-self-start">Bruchetta</div>
+                <div className="card-subtitle align-self-end">$5.99</div>
               </div>
-              <div className="card-text">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</div>
-              <div className="card-link">Order a delivery <img src={DeliveryImg} /></div>
+              <div className="card-text py-4">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</div>
+              <div className="card-link">Order a delivery <img src={DeliveryImg} alt="Order a delivery" /></div>
             </div>
           </div>
         </div>
-        <div className="col-lg-4 col-md-6 col-12">
+        <div className="col-lg-4 col-md-6 col-12 pb-5 pb-md-0 pb-lg-0 d-flex justify-content-center justify-content-lg-start col">
           <div className="card">
-            <img src={LemonDessertImg} className="img-card-top" />
+            <img src={LemonDessertImg} className="img-card-top" alt="Lemon Dessert" />
             <div className="card-body">
-              <div className="row">
-                <div className="col-6">
-                  <div className="card-title">Lemon Dessert</div>
-                </div>
-                <div className="col-6 text-end">
-                  <div className="card-subtitle">$5.00</div>
-                </div>
+              <div className="row px-3 d-flex justify-content-between align-items-center">
+                <div className="card-title align-self-start">Lemon Dessert</div>
+                <div className="card-subtitle align-self-end">$5.00</div>
               </div>
-              <div className="card-text">This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</div>
-              <div className="card-link">Order a delivery <img src={DeliveryImg} /></div>
+              <div className="card-text py-4">This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</div>
+              <div className="card-link">Order a delivery <img src={DeliveryImg} alt="Order a delivery" /></div>
             </div>
           </div>
         </div>

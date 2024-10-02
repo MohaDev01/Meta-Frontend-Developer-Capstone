@@ -10,15 +10,12 @@
   border: 1px solid #000;
   width: 400px;
   height: 424px;
-  flex-shrink: 0;
-  position: absolute;
-  margin-top: 2rem;
+  margin: 2rem 0rem;
 }
 #hero h1 {
   color: #F4C314;
-  font-family: Roboto;
+  font-family: "Markazi Text";
   font-size: 56px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
@@ -26,34 +23,34 @@
   color: #EDEFEE;
   font-family: "Markazi Text";
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: -1rem;
 }
 #hero p {
   color: #EDEFEE;
-  font-family: Roboto;
+  font-family: "Markazi Text";
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 140.625%; /* 28.125px */
 }
-#hero button {
+#hero .btn {
   background-color: #f4ce14;
   color: #333333;
   width: 200px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 24px;
+  font-weight: 800;
+  letter-spacing: .1rem;
   &:hover {
     background-color: transparent;
     border: .1rem solid #f4ce14;
     color: #EDEFEE;
   }
 }
-#hero h3,
+#hero h1,
 #hero p,
-#hero button {
+#hero .btn {
   margin-bottom: 2rem;
 }

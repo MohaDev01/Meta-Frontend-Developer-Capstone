@@ -32,7 +32,8 @@
 #footer-section .navContainer a {
   line-height: 1.625rem;
   &:hover {
-    color: #e1e1e1d8;
+    /* color: #e1e1e1d8; */
+    color: #F4C314;
   }
 }
 /* CONTACT SECTION */
@@ -46,6 +47,9 @@
 /* CONNECT SECTION*/
 #footer-section .connectContainer img {
   width: 1.5rem;
+  &:hover {
+    opacity: 70%;
+  }
 }
 #footer-section .connectContainer ul {
   gap: 1.25rem;

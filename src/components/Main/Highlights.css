@@ -1,15 +1,13 @@
 #highlights {
   margin-bottom: 10rem;
 }
-#highlights .row:nth-child(1) {
+#highlights .specials {
   margin-bottom: 5rem;
 }
 #highlights button {
   background-color: #f4ce14;
   color: #495E57;
-  width: 200px;
-  height: 60px;
-  flex-shrink: 0;
+  padding: 8px 16px;
   border-radius: 24px;
   &:hover {
     background-color: #495E57;
@@ -17,87 +15,55 @@
     color: #EDEFEE;
   }
 }
-#highlights h1 {
-  width: 399px;
+#highlights h2 {
   color: #000;
   font-family: Karla;
-  font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-#highlights .card-container {
-  width: 858px;
-  height: 439px;
-  flex-shrink: 0;
-}
 #highlights .card {
   width: 264.667px;
-  height: 479px;
-  flex-shrink: 0;
+  height: 429px;
 }
 #highlights .card-body {
   width: 264.667px;
   height: 253.742px;
-  flex-shrink: 0;
 }
 #highlights img {
   width: 264.667px;
   height: 185.258px;
-  flex-shrink: 0;
   border-radius: 16px 16px 0px 0px;
   border: 1px solid #000;
 }
 #highlights .card-title {
-  width: 163.594px;
-  height: 25.462px;
-  flex-shrink: 0;
-  overflow: hidden;
   color: #000;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  margin: 0;
   font-family: "Markazi Text";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: 90%; /* 21.6px */
 }
 #highlights .card-subtitle {
-  width: 59.394px;
-  height: 16.682px;
-  flex-shrink: 0;
+  margin: 0;
   color: #EE9972;
   font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 #highlights .card-text {
-  width: 216.736px;
-  height: 120.286px;
-  flex-shrink: 0;
   color: #495E57;
   font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 #highlights .card-link {
-  width: 142.754px;
-  height: 28.096px;
-  flex-shrink: 0;
   color: #333;
   font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 #highlights .card-link img {
   width: 16.672px;
   height: 10.536px;
-  flex-shrink: 0;
   margin-left: .4rem;
 }

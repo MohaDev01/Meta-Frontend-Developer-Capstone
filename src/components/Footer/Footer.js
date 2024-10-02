@@ -46,7 +46,7 @@ function Footer () {
                 <li>
                   <p>
                     <img src={Location} className="img-fluid" alt="Location:" />
-                    123 Fake Ave, Kurdistan, IL 60602
+                    123 Fake Ave, Kurdistan
                   </p>
                 </li>
                 <li>
