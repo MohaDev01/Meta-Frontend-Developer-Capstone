@@ -1,6 +1,6 @@
 # Little Lemon Website
 
-[![Website](https://img.shields.io/badge/Live-Website-yellow)](https://littlelemonmediterranean.vercel.app/)
+[![Website](https://img.shields.io/badge/Live-Website-yellow)](https://littlel.vercel.app/)
 
 Welcome to the repository for **Little Lemon**, a modern website for a Mediterranean restaurant, built with responsiveness and performance in mind. This README provides an overview of the project, its features, and the tech stack used to build the Little Lemon website.
 
