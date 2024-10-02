@@ -1,0 +1,52 @@
+#footer-section {
+  background-color: #495E57;
+}
+#footer-section .row {
+  padding: 4rem 1.2rem;
+}
+/* LOGO SECTION*/
+#footer-section .footerLogo img {
+  width: 96px;
+  height: 170px;
+  flex-shrink: 0;
+  display: flex;
+}
+/* GENERIC SECTION */
+#footer-section ul,
+#footer-section address {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer-section a {
+  color: #EDEFEE;
+  text-decoration: none;
+}
+#footer-section h4 {
+  color: #EDEFEE;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .1rem;
+}
+/* NAV SECTION*/
+#footer-section .navContainer a {
+  line-height: 1.625rem;
+  &:hover {
+    color: #e1e1e1d8;
+  }
+}
+/* CONTACT SECTION */
+#footer-section .contactContainer img {
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+#footer-section .contactContainer p {
+  color: #EDEFEE;
+}
+/* CONNECT SECTION*/
+#footer-section .connectContainer img {
+  width: 1.5rem;
+}
+#footer-section .connectContainer ul {
+  gap: 1.25rem;
+}

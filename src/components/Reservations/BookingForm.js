@@ -1,6 +1,6 @@
 import './BookingForm.css';
 import React, { useState, useEffect } from 'react';
-import RHSImg from '../assets/icons_assets/restauranfood.jpg';
+import RHSImg from '../../assets/icons_assets/restauranfood.jpg';
 
 const BookingForm = ({ submitForm }) => {
   const [formData, setFormData] = useState({

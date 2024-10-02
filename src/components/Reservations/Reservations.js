@@ -1,4 +1,4 @@
-import Main from './Main';
+import Main from '../Main/Main';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ConfirmedBooking from './ConfirmedBooking';

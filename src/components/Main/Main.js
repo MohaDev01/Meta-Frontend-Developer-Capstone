@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
-import BookingForm from './BookingForm';
-import { fetchAPI, submitAPI } from '../utilities/API';
+import BookingForm from '../Reservations/BookingForm';
+import { fetchAPI, submitAPI } from '../../utilities/API';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 // Initialize and update the available times using the fetchAPI

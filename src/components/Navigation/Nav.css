@@ -1,0 +1,24 @@
+#header {
+  margin-bottom: 4.5rem;
+}
+#nav-bar {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(250, 250, 252, .8);
+  min-height: 4.5rem;
+  padding: 0rem 1rem;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+#nav-bar .navbar-brand {
+  cursor: default;
+}
+#nav-bar .nav-item {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+}
+#nav-bar button[aria-label='Log in']:hover {
+  color: #cfcfce;
+}
+#nav-bar button[aria-label='Log in']:focus {
+  color: #343a40;
+}

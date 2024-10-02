@@ -1,8 +1,8 @@
 import './Highlights.css';
-import GreekSaladImg from '../assets/icons_assets/greekSalad.jpg';
-import BruchettaImg from '../assets/icons_assets/bruchetta.jpg';
-import LemonDessertImg from '../assets/icons_assets/lemonDessert.jpg';
-import DeliveryImg from '../assets/icons_assets/Group.svg';
+import GreekSaladImg from '../../assets/icons_assets/greekSalad.jpg';
+import BruchettaImg from '../../assets/icons_assets/bruchetta.jpg';
+import LemonDessertImg from '../../assets/icons_assets/lemonDessert.jpg';
+import DeliveryImg from '../../assets/icons_assets/Group.svg';
 import { useNavigate } from 'react-router-dom';
 export default function Highlights () {
   const navigate = useNavigate();
@@ -12,14 +12,14 @@ export default function Highlights () {
   return (
     <div className="container" id="highlights">
       <div className="row">
-        <div className="col-6">
+        {/* <div className="col-6">
           <h1>This weeks specials!</h1>
         </div>
         <div className="col-6 text-end">
           <button className="btn" onClick={handleButtonClick}>
             Online Menu
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="row cards-container">
         <div className="col-lg-4 col-md-6 col-12">

@@ -1,5 +1,5 @@
 import './Hero.css';
-import HeroImg from '../assets/icons_assets/restauranfood.jpg';
+import HeroImg from '../../assets/icons_assets/restauranfood.jpg';
 import { useNavigate } from 'react-router-dom';
 export default function Hero () {
   const navigate = useNavigate();
@@ -18,9 +18,9 @@ export default function Hero () {
               Reserve a table
             </button>
           </div>
-          <div className="col-6 right">
+          {/* <div className="col-6 right">
             <img src={HeroImg} className="img-fluid" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

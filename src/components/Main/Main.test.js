@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import Main from './Main';
-import { fetchAPI } from '../utilities/API';
+import Main from '../Main/Main';
+import { fetchAPI } from '../../utilities/API';
 
 // Mock fetchAPI
-jest.mock('../utilities/API', () => ({
+jest.mock('../../utilities/API', () => ({
   fetchAPI: jest.fn(),
   submitAPI: jest.fn()
 }));
@@ -25,7 +25,7 @@ describe('Main Component', () => {
 
 
 // Mock fetchAPI
-jest.mock('../utilities/API', () => ({
+jest.mock('../../utilities/API', () => ({
   fetchAPI: jest.fn(),
   submitAPI: jest.fn()
 }));
