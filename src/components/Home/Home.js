@@ -5,7 +5,7 @@ import Testimonials from '../Main/Testimonials';
 import About from '../About/About';
 function Home () {
   return (
-    <main className="Home" id="home">
+    <main id="home">
       <Hero />
       <Highlights />
       <Testimonials />

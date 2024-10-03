@@ -1,7 +1,10 @@
+import './Menu.css';
 import Message from "../Message/Message";
 function Menu () {
   return (
-    <Message />
+    <div className="container" id="menu">
+      <Message />
+    </div>
   );
 }
 

@@ -1,7 +1,10 @@
+import './Login.css';
 import Message from "../Message/Message";
 function Login () {
   return (
-    <Message />
+    <div className="container" id="login">
+      <Message />
+    </div>
   );
 }
 

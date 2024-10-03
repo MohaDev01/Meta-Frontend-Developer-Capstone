@@ -1,7 +1,10 @@
+import './OrderOnline.css';
 import Message from "../Message/Message";
 function OrderOnline () {
   return (
-    <Message />
+    <div className="container" id="order-online">
+      <Message />
+    </div>
   );
 }
 
