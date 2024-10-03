@@ -3,12 +3,8 @@ import GreekSaladImg from '../../assets/icons_assets/greekSalad.jpg';
 import BruchettaImg from '../../assets/icons_assets/bruchetta.jpg';
 import LemonDessertImg from '../../assets/icons_assets/lemonDessert.jpg';
 import DeliveryImg from '../../assets/icons_assets/Group.svg';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default function Highlights () {
-  const navigate = useNavigate();
-  const handleButtonClick = () => {
-    navigate('/menu');
-  };
   return (
     <div className="container-fluid" id="highlights">
       <div className="row px-0 px-md-2 px-lg-5 specials">
@@ -16,9 +12,9 @@ export default function Highlights () {
           <h2>This weeks specials!</h2>
         </div>
         <div className="col-12 col-md-6 col-lg-6 pt-3 pt-md-0 pt-lg-0 text-center text-md-right text-lg-center">
-          <button className="btn px-4" onClick={handleButtonClick} aria-label="Online Menu">
+          <Link className="btn btn-outline-dark px-4 my-4 my-md-0 my-lg-0" aria-label="Online Menu" aria-current="page" to="/menu">
             Online Menu
-          </button>
+          </Link>
         </div>
       </div>
       <div className="row px-0 px-md-2 px-lg-5 menu">

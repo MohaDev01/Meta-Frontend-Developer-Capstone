@@ -4,15 +4,23 @@
 #highlights .specials {
   margin-bottom: 5rem;
 }
-#highlights button {
+#highlights .btn {
   background-color: #f4ce14;
   color: #495E57;
-  padding: 8px 16px;
+  font-size: 1rem;
   border-radius: 24px;
+  border: .1rem solid transparent;
+  font-weight: 800;
+  line-height: 2rem;
+  letter-spacing: .1rem;
   &:hover {
     background-color: #495E57;
     border: .1rem solid #495E57;
     color: #EDEFEE;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
 #highlights h2 {
@@ -20,6 +28,7 @@
   font-family: Karla;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 0;
 }
 #highlights .card {
   width: 264.667px;

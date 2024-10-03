@@ -30,7 +30,7 @@ function Nav () {
               <Link className="nav-link" aria-current="page" to="/order-online">Order Online</Link>
             </li>
           </ul>
-          <ul className="navbar-nav d-flex flex-row justify-content-start">
+          <ul className="navbar-nav d-flex flex-row justify-content-center">
             <li className="nav-item">
               <Link className="btn btn-outline-dark px-4" aria-label="Log in" aria-current="page" to="/login">Login</Link>
             </li>

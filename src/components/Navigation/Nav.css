@@ -12,13 +12,32 @@
 #nav-bar .navbar-brand {
   cursor: default;
 }
+#nav-bar .navbar-toggler {
+  border: none;
+}
+#nav-bar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
 #nav-bar .nav-item {
   margin-right: 0.5rem;
   padding: 0.5rem;
 }
-#nav-bar button[aria-label='Log in']:hover {
-  color: #cfcfce;
-}
-#nav-bar button[aria-label='Log in']:focus {
-  color: #343a40;
+#nav-bar .btn {
+  background-color: transparent;
+  color: #495E57;
+  font-size: 1rem;
+  border-radius: 24px;
+  border: .1rem solid #495E57;
+  font-weight: 800;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  &:hover {
+    background-color: #f4ce14;
+    border-color: transparent;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }

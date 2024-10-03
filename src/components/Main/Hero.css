@@ -37,11 +37,11 @@
 #hero .btn {
   background-color: #f4ce14;
   color: #333333;
-  width: 200px;
-  height: 60px;
-  flex-shrink: 0;
+  font-size: 1.25rem;
   border-radius: 24px;
+  border: .1rem solid transparent;
   font-weight: 800;
+  line-height: 2.5rem;
   letter-spacing: .1rem;
   &:hover {
     background-color: transparent;

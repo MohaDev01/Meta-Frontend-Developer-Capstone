@@ -6,17 +6,17 @@ function About () {
     <>
       <div className="container" id="about">
         <div className="row">
-          <div className="col-6 group">
-            {/* <h1>Little Lemon</h1>
+          <div className="col-12 col-md-12 col-lg-6 mb-5 mb-md-0 mb-lg-0 group">
+            <h1>Little Lemon</h1>
             <h3>Kurdistan</h3>
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-            </p> */}
+            </p>
           </div>
-          <div className="col-6 text-end">
-            <img src={ImgA} className="img-fluid" />
-            <img src={ImgB} className="img-fluid" />
+          <div className="col-12 col-md-12 col-lg-6 d-flex flex-column flex-md-row flex-lg-column align-items-md-center align-items-lg-end">
+            <img src={ImgA} className="lg-rounded-top img-fluid" alt="Mario and Adrian Picture" />
+            <img src={ImgB} className="lg-rounded-bottom img-fluid" alt="Mario and Adrian Picture2" />
           </div>
         </div>
       </div>
