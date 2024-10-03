@@ -7,7 +7,7 @@
 }
 #hero img {
   border-radius: 12px;
-  border: 1px solid #000;
+  border: 1px solid #495E57;
   width: 400px;
   height: 424px;
   margin: 2rem 0rem;
@@ -36,7 +36,7 @@
 }
 #hero .btn {
   background-color: #f4ce14;
-  color: #333333;
+  color: #495E57;
   font-size: 1.25rem;
   border-radius: 24px;
   border: .1rem solid transparent;
@@ -47,6 +47,10 @@
     background-color: transparent;
     border: .1rem solid #f4ce14;
     color: #EDEFEE;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
 #hero h1,

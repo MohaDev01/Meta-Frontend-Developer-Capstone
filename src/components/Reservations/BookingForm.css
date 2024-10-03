@@ -1,57 +1,58 @@
-#bookingForm .row {
-  background-color: #F4C314;
-  padding: 4rem;
+#bookingForm {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(250, 250, 252, .8);
   border-radius: 1rem;
+  width: 30rem;
+  max-width: 25rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
 }
-#bookingForm .container:nth-child(1) {
-  padding: 4rem;
-}
-#bookingForm .block:nth-child(1) {
-  background-color: #495E57;
-  padding: 4rem;
+#bookingForm .heading {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-}
-#bookingForm .block:nth-child(2) {
   background-color: #495E57;
-  padding: 4rem;
 }
-#bookingForm .block:nth-child(3) {
-  background-color: #495E57;
-  padding: 4rem;
-}
-#bookingForm .block:nth-child(4) {
-  background-color: #495E57;
-  padding: 4rem;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-#bookingForm .col-6:nth-child(2) {
-  /* background-color: red; */
-  padding: 4rem;
-}
-#bookingForm .col-6:nth-child(3) {
-  /* background-color: blue; */
-  padding: 4rem;
-}
-#bookingForm label {
-  margin-right: .5rem;
+#bookingForm h4 {
   color: #EDEFEE;
 }
-#bookingForm input {
-  padding-left: .5rem;
+#bookingForm .group {
+  margin-bottom: 1rem;
 }
-#bookingForm .img-fluid {
-  width: 100%;
-  background-color: red;
-  border-top-left-radius: .5rem;
-  border-bottom-left-radius: .5rem;
-  box-shadow: -.4rem .4rem 2rem rgba(0, 0, 0, .5);
+#bookingForm .col {
+  background-color: #F4C314;
+  padding: 1rem 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 #bookingForm h1 {
   color: #495E57;
 }
-#bookingForm button:disabled {
+#bookingForm label {
+  margin-top: .5rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+#bookingForm input {
+  border-radius: .5rem;
+  border: .1rem solid #191919;
+  width: 100%;
+  padding: 0.5rem;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+#bookingForm select {
+  border-radius: .5rem;
+  border: .1rem solid #191919;
+  width: 100%;
+  padding: 0.5rem;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+#bookingForm .btn:disabled {
   color: #333333;
   margin-left: 1rem;
   padding: .2rem;
@@ -60,18 +61,22 @@
   width: 100px;
   flex-shrink: 0;
 }
-#bookingForm button:enabled {
-  background-color: #f4ce14;
-  color: #333333;
-  margin-left: 1rem;
-  padding: .2rem;
-  border: .1rem solid #f4ce14;
-  border-radius: 1rem;
-  width: 100px;
-  flex-shrink: 0;
+#bookingForm .btn {
+  background-color: #495E57;
+  color: #F4C314;
+  font-size: 1rem;
+  border-radius: 24px;
+  border: .1rem solid transparent;
+  font-weight: 800;
+  line-height: 2rem;
+  letter-spacing: .1rem;
   &:hover {
     background-color: transparent;
-    color: #EDEFEE;
-    border: .1rem solid #f4ce14;
+    border: .1rem solid #495E57;
+    color: #495E57;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }

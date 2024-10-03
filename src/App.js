@@ -9,6 +9,7 @@ import Reservations from './components/Reservations/Reservations';
 import OrderOnline from './components/OrderOnline/OrderOnline';
 import Login from './components/Registration/Login';
 import Footer from './components/Footer/Footer';
+import ConfirmedBooking from './components/Reservations/ConfirmedBooking';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/reservations/*" element={<Reservations />} />
+        <Route path="/confirmed-booking/*" element={<ConfirmedBooking />} />
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/login" element={<Login />} />
       </Routes>
