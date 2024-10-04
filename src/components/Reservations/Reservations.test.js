@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Main from '../Main/Main';
+import Reservations from './Reservations';
 import { fetchAPI } from '../../utilities/API';
 
 // Mock fetchAPI
@@ -14,7 +14,7 @@ describe('Main Component', () => {
     fetchAPI.mockReturnValue(['17:00', '17:30', '18:00']);
 
     // Act: Render the Main component
-    render(<Main />);
+    render(<Reservations />);
 
     // Assert: Verify that fetchAPI was called and times are initialized correctly
     expect(fetchAPI).toHaveBeenCalledTimes(1);
@@ -36,7 +36,7 @@ describe('Main Component', () => {
     fetchAPI.mockReturnValue(['17:00', '17:30', '18:00']);
 
     // Act: Render the Main component
-    const { container } = render(<Main />);
+    const { container } = render(<Reservations />);
     
     // Dispatch an action to update times
     const dispatch = container.querySelector('some-element'); // Use appropriate element or method to dispatch action

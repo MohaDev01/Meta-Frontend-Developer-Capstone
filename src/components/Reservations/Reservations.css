@@ -1,0 +1,142 @@
+/* BOOKING FORM */
+#bookingForm {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(250, 250, 252, .8);
+  border-radius: 1rem;
+  width: 30rem;
+  max-width: 25rem;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+#bookingForm .wrapper {
+  border: .1rem solid #495E57;
+  border-radius: 1rem;
+}
+#bookingForm .heading {
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+  background-color: #495E57;
+}
+#bookingForm h4 {
+  color: #EDEFEE;
+  font-family: "Markazi Text";
+  letter-spacing: .1rem;
+  font-weight: 800;
+}
+#bookingForm .group {
+  margin-bottom: 1rem;
+}
+#bookingForm .col {
+  background-color: #EDEFEE;
+  padding: 1rem 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#bookingForm label {
+  margin-top: .5rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+#bookingForm input {
+  border-radius: .5rem;
+  border: .1rem solid #191919;
+  width: 100%;
+  padding: 0.5rem;
+}
+#bookingForm input:focus {
+  outline: none;
+  box-shadow: none;
+}
+#bookingForm select {
+  border-radius: .5rem;
+  border: .1rem solid #191919;
+  width: 100%;
+  padding: 0.5rem;
+}
+#bookingForm select:focus {
+  outline: none;
+  box-shadow: none;
+}
+#bookingForm .btn {
+  background-color: #495E57;
+  color: #EDEFEE;
+  font-size: 1rem;
+  border-radius: 24px;
+  border: .1rem solid transparent;
+  font-weight: 800;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+}
+#bookingForm .btn:hover {
+  background-color: transparent;
+  border: .1rem solid #495E57;
+  color: #495E57;
+}
+#bookingForm .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+#bookingForm .btn:disabled {
+  cursor: not-allowed;
+}
+@media screen and (max-width: 360px) {
+  #bookingForm {
+    width: 20rem;
+  }
+}
+/* CONFIRMED BOOKING */
+#confirmed-booking {
+  min-height: 30rem;
+  padding-top: 10rem;
+}
+#confirmed-booking .card-header {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(250, 250, 252, .8);
+  /*
+  495E57
+  F4C314
+  EDEFEE
+  */
+  color: #495E57;
+  transition: background-color 0.3s ease;
+  border-radius: 1rem;
+  border: .1rem solid #495E57;
+  animation: confirmEffect-lg 2s cubic-bezier(0.86, 0, 0.07, 1);
+}
+@keyframes confirmEffect {
+  from {
+    box-shadow: inset 0rem 0rem .1rem rgba(73, 94, 87, 0.8);
+  } to {
+    box-shadow: inset 27rem 0rem .1rem rgba(73, 94, 87, 0.8);
+    color: #EDEFEE;
+  }
+}
+@keyframes confirmEffect-md {
+  from {
+    box-shadow: inset 0rem 0rem .1rem rgba(73, 94, 87, 0.8);
+  } to {
+    box-shadow: inset 40rem 0rem .1rem rgba(73, 94, 87, 0.8);
+    color: #EDEFEE;
+  }
+}
+@keyframes confirmEffect-lg {
+  from {
+    box-shadow: inset 0rem 0rem .1rem rgba(73, 94, 87, 0.8);
+  } to {
+    box-shadow: inset 45rem 0rem .1rem rgba(73, 94, 87, 0.8);
+    color: #EDEFEE;
+  }
+}
+@media screen and (max-width: 768px) {
+  #confirmed-booking .card-header {
+    animation-name: confirmEffect-md;
+  }
+}
+@media screen and (max-width: 360px) {
+  #confirmed-booking .card-header {
+    animation-name: confirmEffect;
+  }
+  #confirmed-booking h1 {
+    font-size: 1.75rem;
+  }
+}
