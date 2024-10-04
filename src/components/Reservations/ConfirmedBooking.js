@@ -5,9 +5,11 @@ function ConfirmedBooking() {
   return (
     <div className="container" id="confirmed-booking">
       <div className="row">
-        <div className="col-12">
-          <div className="card text-center">
-            <h1 className="card-header bg-warning">Booking Confirmed!</h1>
+        <div className="col d-flex justify-content-center align-items-center">
+          <div className="card text-center border-0">
+            <div className="card-header">
+              <h1>Booking Confirmed!</h1>
+            </div>
             <div className="card-body">
               <p className="card-text">Your reservation has been successfully made. We look forward to seeing you!</p>
             </div>

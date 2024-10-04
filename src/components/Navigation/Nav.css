@@ -2,11 +2,12 @@
   margin-bottom: 5rem;
 }
 #nav-bar {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 0.1rem solid #495e57;
-  min-height: 4.5rem;
-  height: 6.25rem;
-  padding: 0 6%;
+  min-height: 6.25rem;
+  padding: 0rem 1rem;
+  transition: background-color 0.3s ease;
   z-index: 1000;
 }
 #nav-bar .navbar-brand {
@@ -22,6 +23,7 @@
 #nav-bar .nav-item {
   margin-right: 0.5rem;
   padding: 0.5rem;
+  font-weight: 800;
 }
 #nav-bar .btn {
   background-color: transparent;
@@ -32,12 +34,12 @@
   font-weight: 800;
   line-height: 2rem;
   letter-spacing: .1rem;
-  &:hover {
-    background-color: #f4ce14;
-    border-color: transparent;
-  }
-  &:focus {
-    outline: none;
-    box-shadow: none;
-  }
+}
+#nav-bar .btn:hover {
+  background-color: #495E57;
+  color: #EDEFEE;
+}
+#nav-bar .btn:focus {
+  outline: none;
+  box-shadow: none;
 }
