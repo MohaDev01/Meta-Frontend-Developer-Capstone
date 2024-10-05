@@ -1,8 +1,8 @@
 import './Testimonials.css';
-import Pic1 from '../../assets/icons_assets/testi.jpg';
-import Pic2 from '../../assets/icons_assets/testi2.jpg';
-import Pic3 from '../../assets/icons_assets/testi3.jpg';
-import Pic4 from '../../assets/icons_assets/testi4.jpg';
+import Pic1 from '../../assets/images/testimonials/testi.jpg';
+import Pic2 from '../../assets/images/testimonials/testi2.jpg';
+import Pic3 from '../../assets/images/testimonials/testi3.jpg';
+import Pic4 from '../../assets/images/testimonials/testi4.jpg';
 export default function Testimonials () {
   return (
     <>
@@ -19,7 +19,7 @@ export default function Testimonials () {
                 <div class="carousel-inner">
                   <div class="carousel-item active d-flex flex-row justify-content-center">
                     <div className="card">
-                      <img src={Pic1}className="card-img-top" alt="Mary Picture" />
+                      <img src={Pic1}className="card-img-top" alt="Mary" loading="lazy" />
                       <div className="card-body">
                         <h4 className='card-subtitle'>5/5</h4>
                         <h2 className='card-title'>Mary</h2>
@@ -29,7 +29,7 @@ export default function Testimonials () {
                   </div>
                   <div class="carousel-item d-flex justify-content-center">
                     <div className="card">
-                      <img src={Pic2}className="card-img-top" alt="John Picture" />
+                      <img src={Pic2}className="card-img-top" alt="John" loading="lazy" />
                       <div className="card-body">
                         <h4 className='card-subtitle'>4.5/5</h4>
                         <h2 className='card-title'>John</h2>
@@ -39,7 +39,7 @@ export default function Testimonials () {
                   </div>
                   <div class="carousel-item d-flex justify-content-center">
                     <div className="card">
-                      <img src={Pic3}className="card-img-top" alt="Sarah Picture" />
+                      <img src={Pic3}className="card-img-top" alt="Sarah" loading="lazy" />
                       <div className="card-body">
                         <h4 className='card-subtitle'>4/5</h4>
                         <h2 className='card-title'>Sarah</h2>
@@ -49,7 +49,7 @@ export default function Testimonials () {
                   </div>
                   <div class="carousel-item d-flex justify-content-center">
                     <div className="card">
-                      <img src={Pic4}className="card-img-top" alt="Anthony Picture" />
+                      <img src={Pic4}className="card-img-top" alt="Anthony" loading="lazy" />
                       <div className="card-body">
                         <h4 className='card-subtitle'>4.5/5</h4>
                         <h2 className='card-title'>Anthony</h2>
@@ -58,11 +58,11 @@ export default function Testimonials () {
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carousel" rel="noreferrer" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carousel" rel="noreferrer" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>

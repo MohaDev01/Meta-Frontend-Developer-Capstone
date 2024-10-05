@@ -43,3 +43,11 @@
   outline: none;
   box-shadow: none;
 }
+@media screen and (max-width: 360px) {
+  #header {
+    margin-bottom: 2.75rem;
+  }
+  #nav-bar {
+    min-height: 4rem;
+  }
+}

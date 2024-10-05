@@ -1,5 +1,5 @@
 import './Hero.css';
-import HeroImg from '../../assets/icons_assets/restauranfood.jpg';
+import HeroImg from '../../assets/images/hero/restauranfood.jpg';
 import { Link } from 'react-router-dom';
 export default function Hero () {
   return (
@@ -15,7 +15,7 @@ export default function Hero () {
             </Link>
           </div>
           <div className="col-12 col-lg-6 right">
-            <img src={HeroImg} className="img-fluid" alt="Hero Section Image" />
+            <img src={HeroImg} className="img-fluid" alt="Restaurant Food" loading="lazy" />
           </div>
         </div>
       </div>

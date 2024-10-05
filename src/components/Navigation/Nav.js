@@ -1,13 +1,13 @@
 import './Nav.css';
-import LittleLemonLogo from '../../assets/icons_assets/Logo.svg';
+import LittleLemonLogo from '../../assets/images/logos/Logo.svg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 function Nav () {
   return (
     <header id="header">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="nav-bar">
-        <a className="navbar-brand" href=".">
-          <img src={LittleLemonLogo} alt="Little Lemon Logo" loading="lazy" />
+        <a className="navbar-brand" href="." rel="noreferrer">
+          <img src={LittleLemonLogo} alt="Little Lemon" loading="lazy" />
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
