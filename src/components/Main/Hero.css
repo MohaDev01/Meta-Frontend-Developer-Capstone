@@ -6,23 +6,24 @@
   padding: 2rem;
 }
 #hero img {
-  border-radius: 12px;
-  border: 1px solid #495E57;
-  width: 400px;
-  height: 424px;
+  border-radius: .75rem;
+  border: 0.063rem solid #495E57;
+  width: 25rem;
+  height: 26.5rem;
+  object-fit: cover;
   margin: 2rem 0rem;
 }
 #hero h1 {
   color: #F4C314;
   font-family: "Markazi Text";
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 500;
   line-height: normal;
 }
 #hero h3 {
   color: #EDEFEE;
   font-family: "Markazi Text";
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 400;
   line-height: normal;
   margin-top: -1rem;
@@ -30,15 +31,15 @@
 #hero p {
   color: #EDEFEE;
   font-family: "Markazi Text";
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 140.625%; /* 28.125px */
+  line-height: 1.758rem;
 }
 #hero .btn {
   background-color: #f4ce14;
   color: #495E57;
   font-size: 1.25rem;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   border: .1rem solid transparent;
   font-weight: 800;
   line-height: 2.5rem;

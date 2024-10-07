@@ -1,7 +1,7 @@
 import './Nav.css';
-import LittleLemonLogo from '../../assets/images/logos/Logo.svg';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LittleLemonLogo from '../../assets/images/logos/Logo.svg';
 function Nav () {
   return (
     <header id="header">

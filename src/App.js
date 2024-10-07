@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Nav from './components/Navigation/Nav';
 import Footer from './components/Footer/Footer';
+
 const Home = React.lazy(() => import('./components/Home/Home'));
 const About = React.lazy(() => import('./components/About/About'));
 const Menu = React.lazy(() => import('./components/Menu/Menu'));

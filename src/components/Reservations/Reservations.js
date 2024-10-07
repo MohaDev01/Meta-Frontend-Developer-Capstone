@@ -1,4 +1,3 @@
-import './Reservations.css';
 import React, { useState, useReducer, useEffect } from 'react';
 import { fetchAPI, submitAPI } from '../../utilities/API';
 
@@ -18,6 +17,9 @@ const updateTimes = (state, action) => {
 };
 
 export default function Reservations() {
+  useEffect(() => {
+    import('./Reservations.css');
+  }, [])
   const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
   const [formData, setFormData] = useState({
     numberOfGuests: 1,

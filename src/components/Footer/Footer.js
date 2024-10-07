@@ -1,4 +1,3 @@
-import './Footer.css';
 import FooterLogo from '../../assets/images/logos/footer-logo.png';
 import { Link } from 'react-router-dom';
 import X from '../../assets/images/footer/x.png';
@@ -8,8 +7,12 @@ import Facebook from '../../assets/images/footer/facebook.png';
 import Location from '../../assets/images/footer/location.png';
 import Phone from '../../assets/images/footer/phone.png';
 import Mail from '../../assets/images/footer/mail.png';
+import { useEffect } from 'react';
 
 function Footer () {
+  useEffect(() => {
+    import('./Footer.css');
+  }, [])
   return (
       <footer className="container-fluid" id="footer-section">
         <div className="container">

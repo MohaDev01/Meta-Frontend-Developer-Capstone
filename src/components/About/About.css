@@ -2,26 +2,18 @@
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
-#about .container {
-  width: 869px;
-  height: 468px;
-}
-#about .group {
-  width: 373px;
-  height: 468px;
-}
 #about h1 {
   color: #000;
   font-family: "Markazi Text";
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 500;
   line-height: normal;
 }
 #about h3 {
-  width: 168px;
+  width: 10.5;
   color: #333;
   font-family: "Markazi Text";
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 4rem;
@@ -29,27 +21,25 @@
 #about p {
   color: #000;
   text-align: justify;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: normal;
 }
 #about img:nth-child(1) {
-  width: 336px;
-  height: 271.881px;
-  border: 1px solid #000;
-  backdrop-filter: saturate(180%) blur(20px);
+  width: 21rem;
+  height: 16.993rem;
+  border: 0.063rem solid #495E57;
   object-fit: cover;
-  box-shadow: -.2rem .3rem 1rem rgba(0, 0, 0, .5);
+  box-shadow: -.2rem .3rem 1rem rgba(73, 94, 87, .5);
 }
 #about img:nth-child(2) {
-  width: 336px;
-  height: 271.881px;
-  border: 1px solid #000;
-  backdrop-filter: saturate(180%) blur(20px);
+  width: 21rem;
+  height: 16.993rem;
+  border: 0.063rem solid #495E57;
   object-fit: cover;
-  box-shadow: -.2rem .3rem 1rem rgba(0, 0, 0, .5);
+  box-shadow: -.2rem .3rem 1rem rgba(73, 94, 87, .5);
 }
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .lg-rounded-top {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -60,19 +50,19 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   #about img:nth-child(1) {
-    box-shadow: 0rem .3rem 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0rem .3rem 1rem rgba(73, 94, 87, .5);
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
   }
   #about img:nth-child(2) {
-    box-shadow: 0rem .3rem 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0rem .3rem 1rem rgba(73, 94, 87, .5);
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 22.5rem) {
   #about img:nth-child(1) {
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;

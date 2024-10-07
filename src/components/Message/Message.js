@@ -1,5 +1,8 @@
-import './Message.css';
+import { useEffect } from 'react';
 export default function Message () {
+  useEffect(() => {
+    import('./Message.css');
+  }, [])
   return (
     <section className="container" id="message">
       <div className="row">
