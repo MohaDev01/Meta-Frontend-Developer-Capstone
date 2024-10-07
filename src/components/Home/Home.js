@@ -7,7 +7,7 @@ const About = React.lazy(() => import('../About/About'));
 function Home () {
   return (
     <main id="home">
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Hero />
         <Highlights />
         <Testimonials />
