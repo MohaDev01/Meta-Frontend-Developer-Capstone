@@ -1,14 +1,10 @@
-
+import './Highlights.css';
 import GreekSaladImg from '../../assets/images/menu/greekSalad.jpg';
 import BruchettaImg from '../../assets/images/menu/bruchetta.jpg';
 import LemonDessertImg from '../../assets/images/menu/lemonDessert.jpg';
 import DeliveryImg from '../../assets/images/menu/Vehicle.svg';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 export default function Highlights () {
-  useEffect(() => {
-    import('./Highlights.css');
-  }, [])
   return (
     <div className="container-fluid" id="highlights">
       <div className="row px-0 px-md-2 px-lg-5 specials">

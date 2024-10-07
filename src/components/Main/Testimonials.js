@@ -1,13 +1,9 @@
-
-import { useEffect } from 'react';
+import './Testimonials.css';
 import Pic1 from '../../assets/images/testimonials/testi.jpg';
 import Pic2 from '../../assets/images/testimonials/testi2.jpg';
 import Pic3 from '../../assets/images/testimonials/testi3.jpg';
 import Pic4 from '../../assets/images/testimonials/testi4.jpg';
 export default function Testimonials () {
-  useEffect(() => {
-    import('./Testimonials.css');
-  }, [])
   return (
     <div className="container-fluid" id="testimonials">
       <div className="container">
