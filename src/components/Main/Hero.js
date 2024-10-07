@@ -1,6 +1,6 @@
 import './Hero.css';
 import { Link } from 'react-router-dom';
-import HeroImg from '../../assets/images/hero/restauranfood.jpg';
+import HeroImg from '../../assets/images/hero/restauranfood.webp';
 export default function Hero () {
   return (
     <div className="container-fluid" id="hero">

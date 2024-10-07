@@ -1,8 +1,8 @@
 import './Highlights.css';
-import GreekSaladImg from '../../assets/images/menu/greekSalad.jpg';
-import BruchettaImg from '../../assets/images/menu/bruchetta.jpg';
-import LemonDessertImg from '../../assets/images/menu/lemonDessert.jpg';
-import DeliveryImg from '../../assets/images/menu/Vehicle.svg';
+import GreekSaladImg from '../../assets/images/menu/greekSalad.webp';
+import BruchettaImg from '../../assets/images/menu/bruchetta.webp';
+import LemonDessertImg from '../../assets/images/menu/lemonDessert.webp';
+import DeliveryImg from '../../assets/images/menu/Vehicle.webp';
 import { Link } from 'react-router-dom';
 export default function Highlights () {
   return (

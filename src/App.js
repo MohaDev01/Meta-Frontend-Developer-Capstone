@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 const Nav = React.lazy(() => import('./components/Navigation/Nav'));
 const Home = React.lazy(() => import('./components/Home/Home'));
 const About = React.lazy(() => import('./components/About/About'));
@@ -12,9 +12,9 @@ const Footer = React.lazy(() => import('./components/Footer/Footer'));
 
 function App() {
   return (
-    <Router>
-      <Nav />
+    <>
       <Suspense fallback={<div className="loader">Loading...</div>}>
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -23,9 +23,9 @@ function App() {
           <Route path="/order-online" element={<OrderOnline />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </Suspense>
-      <Footer />
-    </Router>
+    </>
   );
 }
 

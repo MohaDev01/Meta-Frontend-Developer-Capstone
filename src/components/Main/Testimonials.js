@@ -1,8 +1,8 @@
 import './Testimonials.css';
-import Pic1 from '../../assets/images/testimonials/testi.jpg';
-import Pic2 from '../../assets/images/testimonials/testi2.jpg';
-import Pic3 from '../../assets/images/testimonials/testi3.jpg';
-import Pic4 from '../../assets/images/testimonials/testi4.jpg';
+import Pic1 from '../../assets/images/testimonials/testi.webp';
+import Pic2 from '../../assets/images/testimonials/testi2.webp';
+import Pic3 from '../../assets/images/testimonials/testi3.webp';
+import Pic4 from '../../assets/images/testimonials/testi4.webp';
 export default function Testimonials () {
   return (
     <div className="container-fluid" id="testimonials">

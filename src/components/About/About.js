@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import ImgA from '../../assets/images/about/Mario_and_Adrian_A.jpg';
-import ImgB from '../../assets/images/about/Mario_and_Adrian_B.jpg';
+import ImgA from '../../assets/images/about/Mario_and_Adrian_A.webp';
+import ImgB from '../../assets/images/about/Mario_and_Adrian_B.webp';
 function About () {
   useEffect(() => {
     import('./About.css');

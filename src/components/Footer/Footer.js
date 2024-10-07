@@ -1,96 +1,84 @@
 import './Footer.css';
-import FooterLogo from '../../assets/images/logos/footer-logo.png';
+import FooterLogo from '../../assets/images/logos/footer-logo.webp';
 import { Link } from 'react-router-dom';
-import X from '../../assets/images/footer/x.png';
-import Instagram from '../../assets/images/footer/instagram.png';
-import YouTube from '../../assets/images/footer/youtube.png';
-import Facebook from '../../assets/images/footer/facebook.png';
-import Location from '../../assets/images/footer/location.png';
-import Phone from '../../assets/images/footer/phone.png';
-import Mail from '../../assets/images/footer/mail.png';
+import X from '../../assets/images/footer/x.webp';
+import Instagram from '../../assets/images/footer/instagram.webp';
+import YouTube from '../../assets/images/footer/youtube.webp';
+import Facebook from '../../assets/images/footer/facebook.webp';
+import Location from '../../assets/images/footer/location.webp';
+import Phone from '../../assets/images/footer/phone.webp';
+import Mail from '../../assets/images/footer/mail.webp';
 
-function Footer () {
+const menuItems = [
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
+  { label: 'Menu', path: '/menu' },
+  { label: 'Reservations', path: '/reservations' },
+  { label: 'Order Online', path: '/order-online' },
+  { label: 'Login', path: '/login' },
+];
+
+const contactInfo = [
+  { img: Location, text: '123 Fake Ave, Kurdistan', alt: 'Address: 123 Fake Ave, Kurdistan' },
+  { img: Phone, text: '+1 (012) 345-6789', alt: 'Phone Number: +1 (012) 345-6789' },
+  { img: Mail, text: 'info@littlelemon.com', alt: 'Email: info@littlelemon.com' },
+];
+
+const socialLinks = [
+  { img: X, alt: 'X Social Media', href: 'https://www.x.com/' },
+  { img: Instagram, alt: 'Instagram', href: 'https://www.instagram.com/' },
+  { img: YouTube, alt: 'YouTube', href: 'https://www.youtube.com/' },
+  { img: Facebook, alt: 'Facebook', href: 'https://www.facebook.com/' },
+];
+
+function Footer() {
   return (
-      <footer className="container-fluid" id="footer-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-6 col-lg-3 pb-5 pb-md-5 pb-lg-0 footerLogo">
-              <img src={FooterLogo} className="img-fluid" alt="Little Lemon" loading='lazy' />
-            </div>
-            <nav className="col-12 col-md-6 col-lg-3 pb-md-5 pb-lg-0 navContainer">
-              <h4>FOOTER MENU</h4>
+    <footer className="container-fluid" id="footer-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6 col-lg-3 pb-5 pb-md-5 pb-lg-0 footerLogo">
+            <img src={FooterLogo} className="img-fluid" alt="Little Lemon Logo" loading='lazy' />
+          </div>
+          <nav className="col-12 col-md-6 col-lg-3 pb-md-5 pb-lg-0 navContainer">
+            <h4>FOOTER MENU</h4>
+            <ul>
+              {menuItems.map((item, index) => (
+                <li key={index}>
+                  <Link aria-current="page" to={item.path}>{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="col-12 col-md-6 col-lg-3 pt-5 pt-md-5 pt-lg-0 contactContainer">
+            <h4>CONTACT US</h4>
+            <address>
               <ul>
-                <li>
-                  <Link aria-current="page" to="/">Home</Link>
-                </li>
-                <li>
-                  <Link aria-current="page" to="/about">About</Link>
-                </li>
-                <li>
-                  <Link aria-current="page" to="/menu">Menu</Link>
-                </li>
-                <li>
-                  <Link aria-current="page" to="/reservations">Reservations</Link>
-                </li>
-                <li>
-                  <Link aria-current="page" to="/order-online">Order Online</Link>
-                </li>
-                <li>
-                  <Link aria-current="page" to="/login">Login</Link>
-                </li>
+                {contactInfo.map((info, index) => (
+                  <li key={index}>
+                    <p>
+                      <img src={info.img} className="img-fluid" alt={info.alt} loading="lazy" />
+                      {info.text}
+                    </p>
+                  </li>
+                ))}
               </ul>
-            </nav>
-            <div className="col-12 col-md-6 col-lg-3 pt-5 pt-md-5 pt-lg-0 contactContainer">
-              <h4>CONTACT US</h4>
-              <address>
-                <li>
-                  <p>
-                    <img src={Location} className="img-fluid" alt="Location:" loading="lazy" />
-                    123 Fake Ave, Kurdistan
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img src={Phone} className="img-fluid" alt="Phone Number:" loading="lazy" />
-                    +1 (012) 345-6789
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img src={Mail} className="img-fluid" alt="Contact Us at:" loading="lazy" />
-                    info@littlelemon.com
-                  </p>
-                </li>
-              </address>
-            </div>
-            <div className="col-12 col-md-6 col-lg-3 py-5 pt-md-5 pt-lg-0 connectContainer">
-              <h4 className="text-start">CONNECT WITH US</h4>
-              <ul className="text-start d-flex">
-                <li>
-                  <a href="https://www.x.com/" target="_blank" rel="noreferrer">
-                    <img src={X} className="img-fluid" alt="X" loading="lazy" />
+            </address>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3 py-5 pt-md-5 pt-lg-0 connectContainer">
+            <h4 className="text-start">CONNECT WITH US</h4>
+            <ul className="text-start d-flex">
+              {socialLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    <img src={link.img} className="img-fluid" alt={link.alt} loading="lazy" />
                   </a>
                 </li>
-                <li>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                    <img src={Instagram} className="img-fluid" alt="Instagram" loading="lazy" />
-                  </a>
-                </li>
-                <li>
-                  <a href="htttps://www.youtube.com/" target="_blank" rel="noreferrer">
-                    <img src={YouTube} className="img-fluid" alt="YouTube" loading="lazy" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                    <img src={Facebook} className="img-fluid" alt="Facebook" loading="lazy" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+              ))}
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   );
 }
 
